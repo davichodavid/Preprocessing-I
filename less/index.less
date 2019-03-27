@@ -145,6 +145,11 @@ body {
   height: 100%;
 }
 
+@h1: 4rem;
+@h2: 3rem;
+@h3: 2rem;
+@p: 1.6rem;
+
 html {
   font-size: 62.5%;
 }
@@ -159,7 +164,10 @@ header {
   nav {
     display: flex;
     justify-content: flex-end;
-    margin: 20px 0;
+    margin: 10px 0;
+    background-color: lightgray;
+    padding: 10px 2%;
+    border-radius: 5px;
 
     a {
       margin-left: 10%;
@@ -170,10 +178,12 @@ header {
       border-radius: 5px;
       width: 10%;
       text-align: center;
+      background-color: rgb(232, 247, 252);
+
     }
 
     a:hover {
-      background-color: rgb(232, 247, 252);
+      background-color: rgb(100, 180, 207);
     }
   }
 }
@@ -184,6 +194,8 @@ header {
   background-color: rgb(250, 243, 243);
   padding: 20px 5%;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 
   nav {
     display: flex;
@@ -216,20 +228,27 @@ header {
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: @h1;
     text-align: center;
     margin: 40px 0;
     font-family: 'Sedgwick Ave', cursive;
+    padding: 20px;
+    background-color: white;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: @h3;
     margin-bottom: 10px;
   }
 
   p {
     font-size: 1.6rem;
     margin-bottom: 10px;
+  }
+
+  .sideways {
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .button-div {
@@ -239,9 +258,8 @@ header {
 
   button {
     font-size: 2rem;
-    padding: 10px 5%;
+    padding: 10px;
     border: 1px solid black;
-    margin: 20px 0;
     border-radius: 10px;
     background-color: rgb(232, 247, 252);
   }
@@ -252,5 +270,77 @@ header {
   }
 }
 
-
 //end top section
+
+.mid-section {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 10px;
+
+  h2 {
+    font-size: @h2;
+    margin: 20px 0;
+  }
+
+  p {
+    font-size: @p;
+  }
+
+  .achievements {
+    background-color: white;
+    width: 50%;
+    padding: 10px 2%;
+    line-height: 25px;
+  }
+
+  .interests {
+    background-color: white;
+    padding: 10px 2%;
+    line-height: 25px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250, 243, 243);
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  h2 {
+    font-size: @h2;
+    margin: 40px 0 20px;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    text-align: center;
+    width: 200px;
+    font-size: 2rem;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0 2% 20px;
+    border-radius: 10px;
+    background-color: #e8f7fc;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  padding: 20px 10px;
+  border-radius: 5px;
+}

@@ -145,7 +145,10 @@ html {
 header nav {
   display: flex;
   justify-content: flex-end;
-  margin: 20px 0;
+  margin: 10px 0;
+  background-color: lightgray;
+  padding: 10px 2%;
+  border-radius: 5px;
 }
 header nav a {
   margin-left: 10%;
@@ -156,14 +159,17 @@ header nav a {
   border-radius: 5px;
   width: 10%;
   text-align: center;
+  background-color: #e8f7fc;
 }
 header nav a:hover {
-  background-color: #e8f7fc;
+  background-color: #64b4cf;
 }
 .top-section {
   background-color: #faf3f3;
   padding: 20px 5%;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 .top-section nav {
   display: flex;
@@ -192,6 +198,8 @@ header nav a:hover {
   text-align: center;
   margin: 40px 0;
   font-family: 'Sedgwick Ave', cursive;
+  padding: 20px;
+  background-color: white;
 }
 .top-section h3 {
   font-size: 2rem;
@@ -201,19 +209,84 @@ header nav a:hover {
   font-size: 1.6rem;
   margin-bottom: 10px;
 }
+.top-section .sideways {
+  display: flex;
+  justify-content: space-evenly;
+}
 .top-section .button-div {
   display: flex;
   justify-content: center;
 }
 .top-section button {
   font-size: 2rem;
-  padding: 10px 5%;
+  padding: 10px;
   border: 1px solid black;
-  margin: 20px 0;
   border-radius: 10px;
   background-color: #e8f7fc;
 }
 .top-section button:hover {
   color: white;
   background-color: #64b4cf;
+}
+.mid-section {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 10px;
+}
+.mid-section h2 {
+  font-size: 3rem;
+  margin: 20px 0;
+}
+.mid-section p {
+  font-size: 1.6rem;
+}
+.mid-section .achievements {
+  background-color: white;
+  width: 50%;
+  padding: 10px 2%;
+  line-height: 25px;
+}
+.mid-section .interests {
+  background-color: white;
+  padding: 10px 2%;
+  line-height: 25px;
+}
+.mid-section .interests div {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #faf3f3;
+  align-items: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.bottom-section h2 {
+  font-size: 3rem;
+  margin: 40px 0 20px;
+}
+.bottom-section ul {
+  display: flex;
+}
+.bottom-section li {
+  text-align: center;
+  width: 200px;
+  font-size: 2rem;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 0 2% 20px;
+  border-radius: 10px;
+  background-color: #e8f7fc;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: lightgray;
+  padding: 20px 10px;
+  border-radius: 5px;
 }
