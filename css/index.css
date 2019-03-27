@@ -133,5 +133,29 @@ table {
 html,
 body {
   height: 100%;
-  background-color: aqua;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+header nav a {
+  margin-left: 10%;
+}
+.top-section nav .fab {
+  font-size: 4rem;
+}
+.top-section nav .fa-js-square {
+  color: #4e3594;
+}
+.top-section nav .fa-css3-alt {
+  color: #c08923;
 }
