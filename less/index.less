@@ -163,6 +163,17 @@ header {
 
     a {
       margin-left: 10%;
+      color: black;
+      padding: 5px 1%;
+      border: 1px solid black;
+      text-decoration: none;
+      border-radius: 5px;
+      width: 10%;
+      text-align: center;
+    }
+
+    a:hover {
+      background-color: rgb(232, 247, 252);
     }
   }
 }
@@ -170,9 +181,16 @@ header {
 //header
 
 .top-section {
+  background-color: rgb(250, 243, 243);
+  padding: 20px 5%;
+  border-radius: 10px;
+
   nav {
+    display: flex;
+    justify-content: space-between;
+
     .fab {
-      font-size: 4rem;
+      font-size: 8rem;
     }
 
     .fa-js-square {
@@ -180,12 +198,59 @@ header {
     }
 
     .fa-css3-alt {
-      color: rgb(192, 137, 35);
+      color: rgb(172, 146, 98);
     }
 
+    .fa-less {
+      color: lightseagreen;
+    }
 
+    .fa-bootstrap {
+      color: lime;
+    }
+
+    .fa-github-square {
+      color: coral;
+    }
 
   }
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 40px 0;
+    font-family: 'Sedgwick Ave', cursive;
+  }
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .button-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    font-size: 2rem;
+    padding: 10px 5%;
+    border: 1px solid black;
+    margin: 20px 0;
+    border-radius: 10px;
+    background-color: rgb(232, 247, 252);
+  }
+
+  button:hover {
+    color: white;
+    background-color: rgb(100, 180, 207);
+  }
 }
+
 
 //end top section

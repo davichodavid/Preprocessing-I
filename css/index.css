@@ -149,13 +149,71 @@ header nav {
 }
 header nav a {
   margin-left: 10%;
+  color: black;
+  padding: 5px 1%;
+  border: 1px solid black;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 10%;
+  text-align: center;
+}
+header nav a:hover {
+  background-color: #e8f7fc;
+}
+.top-section {
+  background-color: #faf3f3;
+  padding: 20px 5%;
+  border-radius: 10px;
+}
+.top-section nav {
+  display: flex;
+  justify-content: space-between;
 }
 .top-section nav .fab {
-  font-size: 4rem;
+  font-size: 8rem;
 }
 .top-section nav .fa-js-square {
   color: #4e3594;
 }
 .top-section nav .fa-css3-alt {
-  color: #c08923;
+  color: #ac9262;
+}
+.top-section nav .fa-less {
+  color: lightseagreen;
+}
+.top-section nav .fa-bootstrap {
+  color: lime;
+}
+.top-section nav .fa-github-square {
+  color: coral;
+}
+.top-section h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 40px 0;
+  font-family: 'Sedgwick Ave', cursive;
+}
+.top-section h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.top-section p {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+.top-section .button-div {
+  display: flex;
+  justify-content: center;
+}
+.top-section button {
+  font-size: 2rem;
+  padding: 10px 5%;
+  border: 1px solid black;
+  margin: 20px 0;
+  border-radius: 10px;
+  background-color: #e8f7fc;
+}
+.top-section button:hover {
+  color: white;
+  background-color: #64b4cf;
 }
