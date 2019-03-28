@@ -133,12 +133,13 @@ table {
 html,
 body {
   height: 100%;
+  background-color: lightslategray;
 }
 html {
   font-size: 62.5%;
 }
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   font-size: 1.6rem;
 }
@@ -146,23 +147,15 @@ header nav {
   display: flex;
   justify-content: flex-end;
   margin: 10px 0;
-  background-color: lightgray;
-  padding: 10px 2%;
-  border-radius: 5px;
+  padding: 10px;
 }
 header nav a {
-  margin-left: 10%;
-  color: black;
-  padding: 5px 1%;
-  border: 1px solid black;
+  margin-left: 5%;
+  color: #1d205a;
   text-decoration: none;
-  border-radius: 5px;
-  width: 10%;
-  text-align: center;
-  background-color: #e8f7fc;
 }
 header nav a:hover {
-  background-color: #64b4cf;
+  color: #e8f7fc;
 }
 .top-section {
   background-color: #faf3f3;
@@ -230,11 +223,13 @@ header nav a:hover {
 }
 .mid-section {
   background-color: lightgrey;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(1, 1.3fr 1fr);
   margin: 10px 0;
   border-radius: 5px;
   padding: 10px;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1em;
 }
 .mid-section h2 {
   font-size: 3rem;
@@ -243,20 +238,10 @@ header nav a:hover {
 .mid-section p {
   font-size: 1.6rem;
 }
-.mid-section .achievements {
-  background-color: white;
-  width: 50%;
-  padding: 10px 2%;
-  line-height: 25px;
-}
-.mid-section .interests {
+.mid-section .box {
   background-color: white;
   padding: 10px 2%;
   line-height: 25px;
-}
-.mid-section .interests div {
-  display: flex;
-  flex-direction: column;
 }
 .bottom-section {
   display: flex;

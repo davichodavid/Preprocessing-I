@@ -143,6 +143,7 @@ table {
 html,
 body {
   height: 100%;
+  background-color: lightslategray;
 }
 
 @h1: 4rem;
@@ -155,7 +156,7 @@ html {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   font-size: 1.6rem;
 }
@@ -165,25 +166,16 @@ header {
     display: flex;
     justify-content: flex-end;
     margin: 10px 0;
-    background-color: lightgray;
-    padding: 10px 2%;
-    border-radius: 5px;
+    padding: 10px;
 
     a {
-      margin-left: 10%;
-      color: black;
-      padding: 5px 1%;
-      border: 1px solid black;
+      margin-left: 5%;
+      color: #1d205a;
       text-decoration: none;
-      border-radius: 5px;
-      width: 10%;
-      text-align: center;
-      background-color: rgb(232, 247, 252);
-
     }
 
     a:hover {
-      background-color: rgb(100, 180, 207);
+      color: rgb(232, 247, 252);
     }
   }
 }
@@ -274,11 +266,13 @@ header {
 
 .mid-section {
   background-color: lightgrey;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(1, 1.3fr 1fr);
   margin: 10px 0;
   border-radius: 5px;
   padding: 10px;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1em;
 
   h2 {
     font-size: @h2;
@@ -289,23 +283,15 @@ header {
     font-size: @p;
   }
 
-  .achievements {
+  .box {
     background-color: white;
-    width: 50%;
     padding: 10px 2%;
     line-height: 25px;
   }
 
-  .interests {
-    background-color: white;
-    padding: 10px 2%;
-    line-height: 25px;
+  .achievements {}
 
-    div {
-      display: flex;
-      flex-direction: column;
-    }
-  }
+  .interests {}
 }
 
 .bottom-section {
